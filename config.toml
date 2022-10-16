@@ -1,0 +1,49 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Sevens Legal'
+themesDir = "themes"
+theme = 'lugo'
+paginate= 5
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
+[params]
+  google_analytics_id=""
+  dateFormat="Jan 2, 2006"
+
+[[menu.main]]
+    name = "HOME"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "ATTORNEYS"
+    url = "/attorneys/"
+    weight = 2
+
+[[menu.main]]
+    name = "CRIMINAL LAW"
+    url = "/criminal/"
+    weight = 3
+
+[[menu.main]]
+    name = "TESTIMONIALS"
+    url = "/testimonials/"
+    weight = 4
+
+[[menu.main]]
+    name = "BLOG"
+    url = "/work/"
+    weight = 5
+
+[[menu.main]]
+    name = "CONTACT"
+    url = "/contact/"
+    weight = 6
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
